@@ -134,5 +134,16 @@ body {
 
 i {
     font-size: 34px;
+    color: rgb(100, 200, 219);
 }
-/* javaScript styles */
+/* Project styles */
+.project-img {
+    width: 100%;
+    height: 50%;
+}
+
+.project-container {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
