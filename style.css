@@ -137,23 +137,56 @@ i {
     color: rgb(100, 255, 219);
 }
 /* Project styles */
-.project-img {
-    width: 100%;
-    height: 100%;
-    transition: ease-in-out .5s;
+#portfolio {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background: #fff;
 }
 
-.project-container {
-    margin-top: 20px;
+#portfolio * {
+    z-index: 2;
+}
+
+#portfolio .portfolio-row {
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.project {
-    margin-bottom: 20px;
+#portfolio .portfolio-item-wrapper {
+    width: 31%;
+    display: inline-block;
+    padding: 0 0 5px;
+    margin: 0 1% 30px;
+    vertical-align: top;
 }
 
-.links {
+#portfolio .portfolio-item {
+    display: block;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
+    padding: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-overlay {
+    position: absolute;
+    background-color: rgba(26, 30, 31, 0.85);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#portfolio .portfolio-info, #portfolio .links, #portfolio .links a i, #portfolio .links a i::after, #portfolio .portfolio-overlay {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+#portfolio .links {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -162,7 +195,7 @@ i {
     right: 0;
     text-align: center;
     margin: 0 auto;
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translate(0, -50px);
     -moz-transform: translate(0, -50px);
     -ms-transform: translate(0, -50px);
@@ -170,20 +203,40 @@ i {
     transform: translate(0, -50px);
 }
 
-.coming-soon {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(100, 255, 219);
+#portfolio .links a i {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 13px;
+    z-index: 100;
 }
+
+#portfolio .portfolio-item img {
+    max-width: 100%;
+    width: 100%;
+    opacity: 1.0;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+#portfolio .portfolio-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: #00009C;
+    color: #fff;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+#portfolio .portfolio-info h3 {
+    font-size: 14px;
+    line-height: 45px;
+    font-weight: 400;
+    margin: 0;
+}
+
 
 /* javaScript styles */
-
-.img-animation {
-    width: 100%;
-    height: 40px;
-    bottom:0;
-    left:0;
-    opacity: 1;
-    text-align: center;
-    background-color: rgb(100, 255, 219);
-}
