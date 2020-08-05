@@ -13,8 +13,12 @@ item.addEventListener('mouseover', () => {
         let selectedIcon = item.querySelector('.links');
         let selectedPortfolio = item.querySelector('.portfolio-overlay');
         selectedPortfolio.style.opacity = '0';
-        selectedPortfolio.style.transition = 'ease-in-out 1s';
+        selectedPortfolio.style.transition = 'ease-in-out 0.7s';
         selectedIcon.style.opacity = '0';
         selectedPortfolioInfo.style.opacity = '0';
     });
 });
+
+$( document ).ready(function() {
+    new WOW().init();
+  });
